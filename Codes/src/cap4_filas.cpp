@@ -19,6 +19,8 @@ int main() {
     printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
     printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
 
+    printf("Ultimo elemento atual: %c\n", acessaUltimoFila(filaDeChar));
+
     // Testa o estado da fila (vazia ou não)
     if (filaVazia(filaDeChar)) {
         printf("A fila está vazia.\n");
@@ -26,19 +28,28 @@ int main() {
         printf("A fila não está vazia.\n");
     }
 
+    
+
     // Enfileira mais elementos
     printf("Enfileirando elementos: 'D', 'E', 'F'...\n");
     enfileirar(filaDeChar, 'D');
     enfileirar(filaDeChar, 'E');
+    enfileirar(filaDeChar, 'F');
+    //enfileirar(filaDeChar, 'G');
+
 
     // Tentativa de enfileirar com fila cheia
-    printf("Tentando enfileirar 'F' em uma fila com capacidade máxima...\n");
-    enfileirar(filaDeChar, 'F'); // Isso deve causar erro de fila cheia
+    printf("Tentando enfileirar 'H' em uma fila com capacidade máxima...\n");
+    enfileirar(filaDeChar, 'H'); // Isso deve causar erro de fila cheia
 
     // Desenfileira os itens restantes
     printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
     printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
     printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
+    printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
+    printf("Desenfileirando: %c\n", desenfileirar(filaDeChar));
+
+
 
     // Verifica novamente se a fila está vazia
     if (filaVazia(filaDeChar)) {

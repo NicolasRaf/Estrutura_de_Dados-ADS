@@ -81,4 +81,8 @@ void destruirFila(Fila *f) {
     *f = NULL;
 }
 
+Itemf acessaUltimoFila(Fila f) {   
+    return f->items[f->final-1];
+}
+
 #endif
