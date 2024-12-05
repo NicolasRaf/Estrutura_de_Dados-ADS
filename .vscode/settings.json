@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "pilha.h": "c",
+        "console_clear.h": "c"
+    }
+}
