@@ -1,3 +1,6 @@
+#ifndef PILHA_H  // Se ainda não foi definido o identificador PILHA_H
+#define PILHA_H  // Define o identificador PILHA_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +14,7 @@ typedef struct pilha {
 
 // Inicializa a pilha com o tamanho máximo especificado
 Pilha inicializarPilha(int max) {
-    Pilha tempP = malloc(sizeof(struct pilha));
+    Pilha tempP = (Pilha) malloc(sizeof(struct pilha));
     if (!tempP) {
         puts("Erro ao alocar memória para a pilha!");
         exit(EXIT_FAILURE);
@@ -19,7 +22,7 @@ Pilha inicializarPilha(int max) {
 
     tempP->tamMax = max;
     tempP->topo = -1;
-    tempP->item = malloc(max * sizeof(ItenmP));
+    tempP->item = (char *) malloc(max * sizeof(ItenmP));
     if (!tempP->item) {
         puts("Erro ao alocar memória para os itens da pilha!");
         free(tempP);
@@ -75,3 +78,5 @@ void destruirPilha(Pilha *p) {
     free(*p);
     *p = NULL;
 }
+
+#endif // Fim do guard PILHA_H

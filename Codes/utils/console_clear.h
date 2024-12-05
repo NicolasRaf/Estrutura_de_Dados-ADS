@@ -6,7 +6,7 @@
 
 // Limpa a tela do console
 void consoleClear() {
-    #ifdef _WIN32 || _WIN64
+    #if defined _WIN32 || _WIN64
         system("cls");
     #else
         system("clear");
