@@ -4,6 +4,6 @@
         "console_clear.h": "c",
         "fila.h": "c"
     },
-    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe"
 }
